@@ -1,0 +1,43 @@
+.hero{
+    background: #111213;
+    color: white;
+    width: 100%;
+}
+
+.hero-info{
+    padding: 180px 100px 100px 100px;
+    width: max-content;
+    line-height: 1;
+    
+}
+
+.hero-info p{
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-name{
+    -webkit-text-fill-color: #111213;
+    -webkit-text-stroke: 1px white;
+}
+
+.departments{
+    display: flex;
+    padding: 50px;
+    margin-left: 60px;
+    width: 1000px;
+    justify-content: space-between;
+    
+}
+
+.departments p {
+    border-bottom: 1px solid #A9191F;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.departments p:hover{
+    border-bottom: 1px solid #EC1C24;
+    transition: 0.4s ease-out;
+}

@@ -1,0 +1,90 @@
+/* <form className='tech-div'>
+                <div className='tech-form'>
+                    <input
+                    id='devops'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='devops'
+                    />
+                    <label htmlFor='devops'>DevOps</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='qa'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='qa'
+                    />
+                    <label htmlFor='qa'>QA</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='backend'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='backend'
+                    />
+                    <label htmlFor='backend'>Backend</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='frontend'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='frontend'
+                    />
+                    <label htmlFor='frontend'>Frontend</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='mobile'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='mobile'
+                    />
+                    <label htmlFor='mobile'>Mobile</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='pm'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='pm'
+                    />
+                    <label htmlFor='pm'>PM</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='infra'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='infra'
+                    />
+                    <label htmlFor='infra'>Infrastructure</label>
+                </div>
+
+                <div className='tech-form'>
+                    <input
+                    id='uiux'
+                    type='checkbox'
+                    checked={checked}
+                    onChange={handleChange}
+                    name='uiux'
+                    />
+                    <label htmlFor='uiux'>UI/UX</label>
+                </div>
+
+            </form> */

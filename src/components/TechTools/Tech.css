@@ -1,0 +1,106 @@
+/* GENERAL STYLINNNGGG*/
+
+.tech{
+    margin-top: 80px;
+}
+
+.tech-title{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.tech-item{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(10, 10, 10, 0.37);
+    padding: 30px 30px;
+    width: 115px;
+    margin: 0;
+}
+
+.technologies{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin-left: 97px;
+    margin-top: 50px;
+}
+
+.tech-item img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.tech-item span{
+    text-align: center;
+    margin: 10px;
+    color: #5C5854;
+    font-size: 15px;
+}
+
+/* SPECIFIC TECHNOLOGIES*/
+
+.devops{
+    background-color: #281D1D;
+}
+
+.qa{
+    background-color: #212121;
+}
+
+.backend{
+    background-color: #1F1E28;
+}
+
+.frontend{
+    background-color: #28212C;
+}
+
+.mobile{
+    background-color: #1A2424;
+}
+
+.pm{
+    background-color: #26261F;
+}
+
+.infra{
+    background-color:#26201B;
+}
+
+.uiux{
+    background-color:#25211D;
+}
+
+/*TECH FORM */
+.tech-div{
+    margin-left: 150px;
+    display: flex;
+    
+}
+
+.tech-form{
+    margin: 30px;
+    cursor: pointer;
+}
+
+.tech-form input{
+    cursor: pointer;
+}
+
+
+.item-label{
+    margin-left: 5px;
+    color: #828F95;
+    cursor: pointer;
+}
+
+

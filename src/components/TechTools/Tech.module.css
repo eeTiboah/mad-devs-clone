@@ -4,14 +4,14 @@
     margin-top: 80px;
 }
 
-.tech-title{
+.tech_title{
     color: white;
     font-size: 4rem;
     text-align: center;
     word-spacing: 2px;
 }
 
-.tech-item{
+.tech_item{
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -26,20 +26,20 @@
 .technologies{
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 1150px;
     margin-left: 97px;
     margin-top: 50px;
 }
 
-.tech-item img{
+.tech_item img{
     width: 40px;
     height: 40px;
     margin-top: 20px;
 }
 
-.tech-item span{
+.tech_item span{
     text-align: center;
     margin: 10px;
     color: #5C5854;
@@ -81,23 +81,23 @@
 }
 
 /*TECH FORM */
-.tech-div{
+.tech_div{
     margin-left: 150px;
     display: flex;
     
 }
 
-.tech-form{
+.tech_form{
     margin: 30px;
     cursor: pointer;
 }
 
-.tech-form input{
+.tech_form input{
     cursor: pointer;
 }
 
 
-.item-label{
+.item_label{
     margin-left: 5px;
     color: #828F95;
     cursor: pointer;

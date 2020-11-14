@@ -1,4 +1,4 @@
-/* <form className='tech-div'>
+            <form className='tech-div'>
                 <div className='tech-form'>
                     <input
                     id='devops'
@@ -87,4 +87,117 @@
                     <label htmlFor='uiux'>UI/UX</label>
                 </div>
 
-            </form> */
+            </form> 
+
+
+
+    // const [color, setColor] = useState('')
+    // const [modTech, setModTech] = useState([
+    //     {id: 1, value: "devops", isChecked: false, label: 'Devops', name: 'devops'},
+    //     {id: 2, value: "qa", isChecked: false, label: 'QA', name: 'qa'},
+    //     {id: 3, value: "backend", isChecked: false, label: 'Backend', name: 'backend'},
+    //     {id: 4, value: "frontend", isChecked: false, label: 'Frontend', name: 'frontend'},
+    //     {id: 5, value: "mobile", isChecked: false, label: 'Mobile', name: 'mobile'},
+    //     {id: 6, value: "pm", isChecked: false, label: 'PM', name: 'pm'},
+    //     {id: 7, value: "infra", isChecked: false, label: 'Infrastructure', name: 'infra'},
+    //     {id: 8, value: "uiux", isChecked: false, label: 'UI/UX', name: 'uiux'}
+    // ])
+
+    // const handleChange = (e) => {
+    //     let tech = modTech
+    //     tech.forEach(item => {
+    //         if (item.value === e.target.value){
+    //             item.isChecked = e.target.checked
+    //             setColor(item.name)
+    //         }
+    //     })
+    //     setModTech(tech)
+        
+    // }
+
+    
+
+    // const checkItems = modTech.map(item => {
+    //     return (
+    //             <div className='tech-form' key={item.id}>
+    //                 <input id={item.value} type='checkbox' checked={item.checked} value={item.value} onClick={handleChange}/>
+    //                 <label className='item-label' htmlFor={item.value}>{item.label}</label>
+    //             </div>
+    //     )
+    // })
+
+
+[
+        {id: 0, 
+        name:'devops',
+        value: 'devops',
+        label: 'Devops',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/ansible.svg', name: 'Ansible' },
+                  {id: 1, image: 'images/icons/terraform.svg', name: 'Teraform' },
+                  {id: 2, image: 'images/icons/cloudform.svg', name: 'CloudForm' },
+                  {id: 4, image: 'images/icons/travis.svg', name: 'Travis' }]},
+        {id: 1, 
+        name:'qa',
+        value: 'qa',
+        label: 'QA',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/cucumber.svg', name: 'Cucumber' },
+                  {id: 1, image: 'images/icons/selenium.svg', name: 'Selenium' },
+                  {id: 2, image: 'images/icons/jasmine.svg', name: 'Jasmine' },
+                  {id: 4, image: 'images/icons/pytest.svg', name: 'Pytest' }]},
+        {id: 2, 
+        name:'backend',
+        value: 'backend',
+        label: 'Backend',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/python.svg', name: 'Python' },
+                  {id: 1, image: 'images/icons/go.svg', name: 'Go' },
+                  {id: 2, image: 'images/icons/node.svg', name: 'Node' },
+                  {id: 4, image: 'images/icons/php.svg', name: 'PHP' }]},
+        {id: 3, 
+        name:'frontend',
+        value: 'frontend',
+        label: 'Frontend',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/angular.svg', name: 'Angular' },
+                  {id: 1, image: 'images/icons/react.svg', name: 'React' },
+                  {id: 2, image: 'images/icons/vue.svg', name: 'Vue' },
+                  {id: 4, image: 'images/icons/babel.svg', name: 'Babel' }]},
+        {id: 4, 
+        name:'mobile',
+        value: 'mobile',
+        label: 'Mobile',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/kotlin.svg', name: 'Kotlin' },
+                  {id: 1, image: 'images/icons/ios.svg', name: 'IOS' },
+                  {id: 2, image: 'images/icons/java.svg', name: 'Java' },
+                  {id: 4, image: 'images/icons/swift.svg', name: 'Swift' }]},
+        {id: 5, 
+        name:'pm',
+        value: 'pm',
+        label: 'PM',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/jira.svg', name: 'Jira' },
+                  {id: 1, image: 'images/icons/slack.svg', name: 'Slack' },
+                  {id: 2, image: 'images/icons/zoom.svg', name: 'Zoom' },
+                  {id: 4, image: 'images/icons/notion.svg', name: 'Notion' }]},
+        {id: 6, 
+        name:'infra',
+        value: 'infra',
+        label: 'Infrastructure',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/aws.svg', name: 'AWS' },
+                  {id: 1, image: 'images/icons/heroku.svg', name: 'Heroku' },
+                  {id: 2, image: 'images/icons/netlify.svg', name: 'Netlify' },
+                  {id: 4, image: 'images/icons/azure.svg', name: 'Azure' }]},
+        {id: 7, 
+        name:'uiux',
+        value: 'uiux',
+        label: 'UI/UX',
+        isChecked: false,
+        children: [{id: 0, image: 'images/icons/figma.svg', name: 'Figma' },
+                  {id: 1, image: 'images/icons/sketch.svg', name: 'Sketch' },
+                  {id: 2, image: 'images/icons/invision.svg', name: 'InVision' },
+                  {id: 4, image: 'images/icons/zeplin.svg', name: 'Zeplin' }]},
+    ]

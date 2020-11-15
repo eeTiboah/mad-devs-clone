@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     border: 0.5px solid rgba(10, 10, 10, 0.37);
-    padding: 30px 30px;
+    padding: 50px 70.5px;
     width: 115px;
     margin: 0;
 }
@@ -26,20 +26,20 @@
 .technologies{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 1150px;
-    margin-left: 97px;
+    width: 1200px;
+    margin-left: 7px;
     margin-top: 50px;
 }
 
-.tech_item img{
+.tech_img{
     width: 40px;
     height: 40px;
     margin-top: 20px;
 }
 
-.tech_item span{
+.tech_span{
     text-align: center;
     margin: 10px;
     color: #5C5854;
@@ -82,20 +82,41 @@
 
 /*TECH FORM */
 .tech_div{
-    margin-left: 150px;
+    margin-left: 85px;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+
 .tech_form{
-    margin: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+.tech_check{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
 
 .tech_form input{
     cursor: pointer;
 }
 
+.techo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .item_label{
     margin-left: 5px;

@@ -1,5 +1,6 @@
 import React from 'react'
 import Tech from '../TechTools'
+import Case from '../Case'
 import './About.css'
 
 const About = () => {
@@ -44,6 +45,7 @@ const About = () => {
             </div>
 
             <Tech />
+            <Case />
         </div>
     )
 }

@@ -1,20 +1,38 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import data from '../../data.json'
 import './Tech.css'
 
 const NewTech = ()=>{
-    const [tech, setTech] = useState(data)
+    const [tech, setTech] = useState([])
     const [name, setName] = useState('')
-    const [active, setActive] = useState(false)
+	const [active, setActive] = useState(false)
+	const [selectedCategory, setSelectedCategory] = useState(false)
 
     const handleClick = (item) => {
-        setActive(!active)
-        setName(item.name)
-        item.name === name ? setActive(!active) : setActive(true)
+		item.isChecked = !item.isChecked
+		setSelectedCategory(item.isChecked)
+		setActive(!active)
+		setName(item.name)
+		// item.name === name ? setActive(!active) : setActive(true)
+        if (item.name === name){
+			setActive(!active)
+			setSelectedCategory(item.isChecked)
+		}else{
+			setActive(true)
+			setSelectedCategory(item.isChecked)
+		}
     }
 
+    useEffect(()=>{
+        async function getData(){
+            const techData = data;
+            setTech(techData)
+        }
 
-    // console.log(`name is ${name}. active is ${active}`)
+        getData()
+    }, [])
+
+    console.log(`name is ${name}. active is ${active}. selected is ${selectedCategory}`)
 
     const checkItems = tech.map(item=>{
         const techName = item.children
@@ -25,7 +43,7 @@ const NewTech = ()=>{
                         <div>{item.label}</div>
                     </div>
                 
-                <div className={`${item.name}`}>
+                <div className={`${item.name} ${active && item.name === name ? `${item.name}`: ''} ${item.isChecked === selectedCategory ? '' : 'fadeout'}`}>
                     <div className={`tech_item ${item.name}-${techName[0].identity} ${techName[0].identity}`}>
                         <img className={`tech_img`} src={techName[0].image} alt={`${techName[0].identity}`.toLowerCase()} />
                         <span className={`tech_span`}>{techName[0].name}</span>
